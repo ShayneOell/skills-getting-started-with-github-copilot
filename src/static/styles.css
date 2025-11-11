@@ -179,6 +179,36 @@ footer {
   box-shadow: 0 1px 0 rgba(18, 18, 18, 0.02);
 }
 
+.participant-name {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.participant-delete {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.12s ease, transform 0.08s ease;
+}
+
+.participant-delete svg { display: block; }
+
+.participant-delete:hover {
+  background-color: rgba(198, 40, 40, 0.06);
+  transform: translateY(-1px);
+}
+
+.participant-delete:active {
+  transform: translateY(0);
+}
+
 /* small colored dot before each participant */
 .participant-item::before {
   content: "";
